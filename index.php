@@ -15,10 +15,10 @@
         
 
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" >
+        <input type="text" id="name" name="name" required minlength="2" maxlength="20" pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces.">
 
         <label for="program">Program of study</label>
-        <select id="program" name="program" required>
+        <select id="program" name="program" required title="Please select a program of study.">
             <option value="">-- Select --</option>
             <option value="Computer Systems Technology" >Computer Systems Technology</option>
             <option value="Information Technology" >Information Technology</option>
@@ -26,10 +26,10 @@
         </select>
 
         <label for="year">Year of study</label>
-        <input type="number" id="year" name="year" >
+        <input type="number" id="year" name="year" required min="2021" max="2025" title="Please enter a valid year of study.">
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" >
+        <input type="email" id="email" name="email" required title="Please enter a valid email address.">
         
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
