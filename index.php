@@ -11,7 +11,7 @@
     <h1>Student Information Form</h1>
 
     
-    <form method="post"  action="student_reflector.php" >
+    <form method="post"  action="student_reflector.php" nonvalidate >
         
 
         <label for="name">Name</label>

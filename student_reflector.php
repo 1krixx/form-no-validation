@@ -18,10 +18,10 @@
     $year    = $_POST["year"] ;
     $email   = $_POST["email"] ;
 
-    echo "<p>Thank you, " . $name . " ! Your information was submitted successfully.</p>";
-        echo "<p>Program: " . $program . "</p>";
-        echo "<p>Year: " . $year . "</p>";
-        echo "<p>Email: " . $email . "</p>";
+    echo "<p>Thank you, " . htmlspecialchars($name) . " ! Your information was submitted successfully.</p>";
+        echo "<p>Program: " . htmlspecialchars($program) . "</p>";
+        echo "<p>Year: " . htmlspecialchars($year) . "</p>";
+        echo "<p>Email: " . htmlspecialchars($email) . "</p>";
 
     } else {
         echo "<p>No valid submission received.</p>";
